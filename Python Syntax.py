@@ -1,4 +1,5 @@
-print("Hello, World!")
+if 5 > 2:
+  print("Five is greater than two!")
 
 if 5 > 2:
  print("Five is greater than two!") 
@@ -6,9 +7,8 @@ if 5 > 2:
         print("Five is greater than two!") 
 
 x = 5
-y = "John"
-print(x, y)
+y = "Hello, World!"
 
-import random
+#This is a comment.
+print("Hello, World!")
 
-print(random.randrange(1, 10))
