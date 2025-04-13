@@ -1,6 +1,7 @@
 import pygame
 import time
 import math
+import os
 
 pygame.init()
 
@@ -8,7 +9,10 @@ WIDTH, HEIGHT = 750, 500
 CENTER = (WIDTH // 2, HEIGHT // 2)
 BACKGROUND_COLOR = (255, 255, 255)
 
-mickey_img = pygame.image.load("mickey_clock.jpg")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+mickey_img = pygame.image.load(BASE_DIR, "mickey_clock.jpg")
 mickey_img = pygame.transform.scale(mickey_img, (WIDTH, HEIGHT))
 min_hand_img = pygame.image.load("min_hand.png")
 sec_hand_img = pygame.image.load("sec_hand.png")
